@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "HJTI-128 | Hybrid Jungian Type Indicator",
+  title: "HJTI | Hybrid Jungian Type Indicator",
   description:
     "A hybrid eight-function personality test integrating Jungian functions, MBTI-style typology, and Big Five calibration.",
   keywords: [
