@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight, BookOpen, Layers3, Radar, Sparkles } from "lucide-react";
+import { ArrowRight, BookOpen, GitBranch, Layers3, Radar, Sparkles } from "lucide-react";
 import { DisclaimerCard } from "@/components/DisclaimerCard";
 
 const featureCards = [
@@ -35,6 +35,15 @@ export function Hero() {
               查看方法论
               <BookOpen className="h-4 w-4" aria-hidden="true" />
             </Link>
+            <a
+              className="secondary-button"
+              href="https://github.com/yunlux/hjti"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub
+              <GitBranch className="h-4 w-4" aria-hidden="true" />
+            </a>
           </div>
         </div>
 
