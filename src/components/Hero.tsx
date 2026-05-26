@@ -26,7 +26,7 @@ export function Hero() {
             MBTI-style typology, and Big Five calibration.
           </p>
           <p className="mt-3 max-w-2xl text-base leading-7 text-slate-400">
-            中文译文：HJTI8 是一个融合荣格八维、MBTI 式类型推断与大五人格校准的混合八维人格测试。
+            HJTI8 是一个融合荣格八维、MBTI 式类型推断与大五人格校准的混合八维人格测试。
           </p>
           <p className="mt-2 max-w-2xl text-sm leading-6 text-slate-500">
             关联：MBTI、荣格八维、16型人格、认知功能、人格测试。
