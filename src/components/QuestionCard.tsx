@@ -13,8 +13,7 @@ export function QuestionCard({
   return (
     <article className="glass-card p-5 sm:p-7">
       <div className="mb-5">
-        <p className="text-sm text-cyan-200">{question.dimension}</p>
-        <h1 className="mt-3 text-2xl font-semibold leading-snug text-white">{question.text}</h1>
+        <h1 className="text-2xl font-semibold leading-snug text-white">{question.text}</h1>
       </div>
 
       {question.kind === "bipolar" && question.left && question.right ? (

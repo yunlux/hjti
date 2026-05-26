@@ -3,10 +3,10 @@ import { ArrowRight, BookOpen, GitBranch, Layers3, Radar, Sparkles } from "lucid
 import { DisclaimerCard } from "@/components/DisclaimerCard";
 
 const featureCards = [
-  { title: "八维功能", body: "Ne Ni Se Si Te Ti Fe Fi 八个认知功能独立计分。", icon: Layers3 },
-  { title: "多算法融合", body: "结合四字母、功能栈和原型相似度三套输出。", icon: Radar },
-  { title: "Top 3 类型", body: "不只给一个标签，也展示接近候选与置信度。", icon: Sparkles },
-  { title: "原创题库", body: "非官方 MBTI，不复刻商业题库，用于娱乐与自我探索。", icon: BookOpen },
+  { title: "八维功能", body: "围绕 Ne Ni Se Si Te Ti Fe Fi 分别计分，不只看四个字母。", icon: Layers3 },
+  { title: "多算法融合", body: "结合四字母倾向、功能栈匹配和原型相似度，给出更稳的候选结果。", icon: Radar },
+  { title: "Top 3 类型", body: "展示最接近的 3 个类型和置信度，方便理解边界而不是只收一个标签。", icon: Sparkles },
+  { title: "80 题场景版", body: "最新题库为 80 题版本，更多使用生活、学习和工作情境来减少抽象自评偏差。", icon: BookOpen },
 ];
 
 export function Hero() {
@@ -15,15 +15,21 @@ export function Hero() {
       <section className="grid gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
         <div>
           <h1 className="max-w-3xl text-4xl font-semibold leading-tight text-white sm:text-6xl">
-            HJTI-64 Preview
-            <span className="block text-gradient">Hybrid Jungian Type Indicator</span>
+            HJTI8
+            <span className="block text-gradient">混合荣格类型指标</span>
           </h1>
-          <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300">
-            A hybrid eight-function personality test integrating Jungian functions, MBTI-style typology, and Big Five
-            calibration.
+          <p className="mt-4 max-w-2xl text-base font-medium leading-7 text-cyan-100">
+            80 Preview：最新题库为 80 题版本，正在以更具体的情境题提升结果稳定性和可读性。
+          </p>
+          <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-300">
+            Hybrid Jungian Type Indicator is a hybrid eight-function personality test integrating Jungian functions,
+            MBTI-style typology, and Big Five calibration.
           </p>
           <p className="mt-3 max-w-2xl text-base leading-7 text-slate-400">
-            融合荣格八维、MBTI式类型推断与大五人格校准的混合人格测试。
+            中文译文：HJTI8 是一个融合荣格八维、MBTI 式类型推断与大五人格校准的混合八维人格测试。
+          </p>
+          <p className="mt-2 max-w-2xl text-sm leading-6 text-slate-500">
+            关联：MBTI、荣格八维、16型人格、认知功能、人格测试。
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">

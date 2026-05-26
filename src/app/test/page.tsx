@@ -32,7 +32,8 @@ export default function TestPage() {
     getServerCurrentIndexSnapshot,
   );
   const answers = useMemo(() => JSON.parse(answersSnapshot) as AnswerMap, [answersSnapshot]);
-  const currentIndex = Math.min(Number.parseInt(currentIndexSnapshot, 10) || 0, questions.length - 1);
+  const parsedIndex = Number.parseInt(currentIndexSnapshot, 10);
+  const currentIndex = Math.min(Number.isFinite(parsedIndex) ? parsedIndex : 0, questions.length - 1);
 
   const answeredCount = useMemo(
     () => questions.filter((question) => Number.isInteger(answers[question.id])).length,
@@ -76,10 +77,10 @@ export default function TestPage() {
         <div className="mt-4">
           <ProgressBar value={progress} />
         </div>
-        {!answer ? <p className="mt-3 text-sm text-amber-200">你可以稍后回来补答，未答题会降低结果置信度。</p> : null}
+        {answer === undefined ? <p className="mt-3 text-sm text-amber-200">你可以稍后回来补答，未答题会降低结果置信度。</p> : null}
       </section>
 
-      <QuestionCard question={currentQuestion} answer={answer} onAnswer={handleAnswer} />
+      <QuestionCard key={currentQuestion.id} question={currentQuestion} answer={answer} onAnswer={handleAnswer} />
 
       <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
         <div className="flex gap-3">

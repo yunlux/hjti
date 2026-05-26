@@ -15,11 +15,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "HJTI | Hybrid Jungian Type Indicator",
+  title: "HJTI8 混合荣格类型指标 | 80 Preview",
   description:
-    "A hybrid eight-function personality test integrating Jungian functions, MBTI-style typology, and Big Five calibration.",
+    "HJTI8 混合荣格类型指标。80 Preview 最新题库为 80 题版本，融合荣格八维、MBTI 式类型推断与大五人格校准。关联：MBTI、荣格八维、16型人格、认知功能、人格测试。",
   keywords: [
     "HJTI",
+    "HJTI8",
+    "混合荣格类型指标",
     "Jungian functions",
     "MBTI",
     "cognitive functions",
@@ -27,6 +29,8 @@ export const metadata: Metadata = {
     "荣格八维",
     "人格测试",
     "MBTI测试",
+    "16型人格",
+    "认知功能",
   ],
 };
 

@@ -28,7 +28,7 @@ export function buildResultCopy(result: HJTIResult) {
   const functions = result.functionRanking.map((entry) => `${entry.key} ${Math.round(entry.score)}`).join(" / ");
 
   return [
-    `HJTI-64 Preview 结果：${result.primaryType}`,
+    `HJTI8 80 Preview 结果：${result.primaryType}`,
     `${type.nameZh} / ${type.nameEn}`,
     `置信度：${result.confidence}`,
     `完成度：${formatPercent(result.completion)}`,

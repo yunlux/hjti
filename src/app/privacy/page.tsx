@@ -4,7 +4,7 @@ const items = [
   {
     icon: ServerOff,
     title: "不上传服务器",
-    text: "HJTI-64 Preview 是纯前端应用，结果计算在你的浏览器里完成。",
+    text: "HJTI8 80 Preview 是纯前端应用，结果计算在你的浏览器里完成。",
   },
   {
     icon: Database,

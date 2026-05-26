@@ -16,8 +16,8 @@ export function Navbar() {
             <BrainCircuit className="h-5 w-5 text-cyan-200" aria-hidden="true" />
           </span>
           <span className="leading-tight">
-            <span className="block text-sm font-semibold">HJTI-64 Preview</span>
-            <span className="hidden text-xs text-slate-400 sm:block">Hybrid Jungian Type Indicator</span>
+            <span className="block text-sm font-semibold">HJTI8</span>
+            <span className="hidden text-xs text-slate-400 sm:block">混合荣格类型指标 · 80 Preview</span>
           </span>
         </Link>
 
